@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITE - Update Product</title>
+    <link rel="stylesheet" href="assets/css/styleaddproduct.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.jpg" alt="logo">
+        </div>
+        <nav>
+            <a href="#hero">HOME</a>
+            <a href="#offerings">CATEGORY</a>
+            <a href="#intro">ABOUT US</a>
+            <a href="#intro2">OUR PERFORMANCE</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>UPDATE PRODUCT</h1>
+            <form action="./fungsi/update_product.php" method="POST" enctype="multipart/form-data">
+                <input type="hidden" id="productid" name="productid" value="">
+                <label for="name">Product Name</label>
+                <input type="text" id="name" name="name" value="" required>
+                <br>
+                <label for="creator">Creator</label>
+                <input type="text" id="creator" name="creator" value="" required>
+                <br>
+                <label for="price">Price</label>
+                <input type="text" id="price" name="price" value="" required>
+                <br>
+                <label for="category_select">Category</label>
+                <select id="category_select" name="category" required>
+                    <option value="cake">Cake</option>
+                    <option value="bread">Bread</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="pastries">Pastries and Biscuits</option>
+                    <option value="jams">Jams</option>
+                    <option value="snacks">Sweet Snacks</option>
+                </select>
+                <br>
+                <label for="photo">Photo</label>
+                <img src="" alt="" id="display_foto" style="width : 100px;height : 100px">
+                <input type="file" id="photo" name="product_photo" accept="image/*">
+                <br>
+                <label for="link">Product Link</label>
+                <input type="url" id="link" name="link" value="" required>
+                <br>
+                <button type="submit">UPDATE</button>
+            </form>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/load_products.js"></script>
+</body>
+</html>

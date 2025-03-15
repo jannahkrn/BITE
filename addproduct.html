@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITE - Sweetness in Every Bite</title>
+    <link rel="stylesheet" href="assets/css/styleaddproduct.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.jpg" alt="logo">
+        </div>
+        <nav>
+            <a href="#hero">HOME</a>
+            <a href="#offerings">CATEGORY</a>
+            <a href="#intro">ABOUT US</a>
+            <a href="#intro2">OUR PERFORMANCE</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>ADD PRODUCT</h1>
+            <form action="fungsi/add_product.php" method="POST" enctype="multipart/form-data">
+                <label for="product-name">Product Name</label>
+                <input type="text" id="product-name" name="product-name" required>
+                <br>
+                <label for="creator">Creator</label>
+                <input type="text" id="creator" name="creator" required>
+                <br>
+                <label for="price">Price</label>
+                <input type="text" id="price" name="price" required> <!-- Changed back to text -->
+                <br>
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="Cake">Cake</option>
+                    <option value="Bread">Bread</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Pastries and Biscuits">Pastries and Biscuits</option>
+                    <option value="Jams">Jams</option>
+                    <option value="Sweet Snacks">Sweet Snacks</option>
+                </select>
+                <br>
+                <label for="photo">Photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+                <br>
+                <label for="link">Product Link</label>
+                <input type="url" id="link" name="link" placeholder="Enter product link" required>
+                <br>
+                <button type="submit">SAVE</button>
+            </form>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body {
+    font-family: Raleway;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+header a {
+    text-decoration: none;
+    color: #606C38;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+header a:hover,
+header a:focus {
+    color: #606C38;
+    border-bottom: 2px solid #606C38;
+}
+
+header .logo img {
+    margin-left: 0.5cm;
+    width: 10%;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #606C38;
+    font-weight: bold;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+aside {
+    width: 20%;
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+aside h2 {
+    background-color: #ffeb99;
+    padding: 10px;
+    border-radius: 5px;
+    color: #606C38;
+}
+
+aside a {
+    text-decoration: none;
+    color: #606C38;
+    font-weight: bold;
+}
+
+aside a {
+    color: #606C38; /* Set link color */
+    text-decoration: none; /* Remove default underline */
+}
+
+aside a:hover,
+aside a:active {
+    text-decoration: underline; /* Add underline on hover and when active */
+}
+
+.products {
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    padding: 10px;
+    padding-right: 0cm;
+    padding-left: 0cm;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(50% - 20px);
+}
+
+.product img {
+    width: 30%;
+    border-radius: 8px;
+}
+
+.price {
+    font-weight: bold;
+    color: #8c8c5a;
+}
+
+button {
+    background-color: red;
+}
+
+.active {
+    text-decoration: underline;
+}

@@ -1,0 +1,106 @@
+body {
+    font-family: Raleway;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+header a {
+    text-decoration: none;
+    color: #606C38;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+header a:hover,
+header a:focus {
+    color: #606C38;
+    border-bottom: 2px solid #606C38;
+}
+
+header .logo img {
+    margin-left: 0.5cm;
+    width: 10%;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #606C38;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.container {
+    width: 65%;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 5cm;
+    margin-right: 1cm;
+    background-color: white;
+    padding: 100px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0.1, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0cm;
+    color: #5a5a3d;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    margin-right: 0cm;
+}
+
+label {
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    margin-right: 0cm;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #5a5a3d;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+}
+
+button {
+    background-color: #5a5a3d;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4a4a2d;
+}
